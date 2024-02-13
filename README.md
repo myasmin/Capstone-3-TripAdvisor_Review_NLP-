@@ -1,6 +1,6 @@
 # An NLP Project Report On Analyzing Sentiments of Restaurant Reviews provided by TripAdvisor
 
-[![Wordcloud on Reviews](/data/frontpage_wordcloud.png "Wordcloud of Barcelona Dataset")]()
+[![Wordcloud on Reviews](/data/frontpage_wordcloud.png "Wordcloud of Barcelona Dataset")](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/frontpage%20%20wordcloud.png)
 
 The Analysis focuses  on reviews given for restaurants in Barcelona collected from TripAdvisor. It is conducted by adapting NLP Techniques to adapt a meaningful interpretation by analyzing the sentiment of the reviewers on the restaurants.
 
