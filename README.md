@@ -2,7 +2,7 @@
 
 The Analysis focuses  on reviews given for restaurants in Barcelona collected from TripAdvisor. It is conducted by adapting NLP Techniques to adapt a meaningful interpretation by analyzing the sentiment of the reviewers on the restaurants.
 
-This dataset is provided by @TripAdvisor, and can be found in [here](https://www.kaggle.com/datasets/inigolopezrioboo/a-tripadvisor-dataset-for-nlp-tasks) in Kaggle. Due to memory allocation, for this analysis the 'Barcelona' dataset was analyzed and runtime resources used in Google Colab platform.
+This large dataset is provided by @TripAdvisor, and can be found in [here](https://www.kaggle.com/datasets/inigolopezrioboo/a-tripadvisor-dataset-for-nlp-tasks) in Kaggle. Due to memory allocation, for this analysis the 'Barcelona' dataset was analyzed and runtime resources used in Google Colab platform.
 
 ## Context:
 Online Reviews have a huge impact on Restaurant and Cafe Businesses. Platforms like TripAdvisor play a crucial role to impact a Customer’s Decision and a Restaurant’s Reputation. The Reviews posted online offer both opportunities and risk, so it is important to analyze the Sentiment of the reviewers. This might contribute to making Restaurateur’s business decisions more precise.
@@ -16,21 +16,35 @@ The source of the data is [here](https://www.kaggle.com/datasets/inigolopezriobo
 * Each record represents one customer review, and contains details about restaurant name, rating review (1 to 5), sample (positive or negative), full review, date, city etc.
 
 ## OBJECTIVE OF THIS STUDY:
-Our interest is focused on the Sentiment Analysis of the reviews in the Dataset. The “sample - positive or negative” Column is our event of interest. So, this is a classification problem based on Natural Language Processing. To get a more precise idea, we will apply Topic Modelling to identify the groups (of keywords) and try to find if there is any association between the groups/ topics with the sentiment.
+Our interest is focused on the Sentiment Analysis of the reviews in the Dataset. The “sample - positive or negative” Column is our event of interest. So, this is a classification problem based on Natural Language Processing analysis. Our analysis was to apply Topic Modelling to identify the groups (of keywords) and try to find if there is any association between the groups/ topics with the sentiment.
 
-In other words, this problem is an application of Unsupervised Learning (Topic Modelling) to deal the curse of high-dimensionality of a Corpus. Then, we applied Supervised Learning (Classification of Sentiments) to find the intfluentials among the Topics.
+In other words, this problem is an application of Unsupervised Learning (Topic Modelling) to deal the of high-dimensionality. Then, we applied Supervised Learning (Classification of Sentiments) to find the intfluentials among the Topics.
 
 ## Analysis Overview:
 This study has scopes of tuning in terms of grid search CV, hyperparatemer tuning (especially Number of Topic Determination) and also scope for Neural Network application. Overall, I found this analysis a different way to deal with dimensinality reduction, Topic words selection and predictive analysis.
 
 ## Tools and Software: 
+
 Python 3.9 (Most Commonly libraries listed below):
-Numpy,
-Pandas,
-Matplotlib,
-Seaborn,
-NLTK,
-Scikitlearn
-Genism
-Spacy.
+* Numpy,
+* Pandas,
+* Matplotlib,
+* Seaborn,
+* NLTK,
+* Scikitlearn
+* Genism
+* Spacy.
+
+## Acknowlegdement:
+
+* https://www.machinelearningplus.com/nlp/topic-modeling-python-sklearn-examples/
+* https://eugenia-anello.medium.com/nlp-tutorial-series-d0baaf7616e0
+* https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05
+* https://www.kaggle.com/datasets/inigolopezrioboo/a-tripadvisor-dataset-for-nlp-tasks
+* https://zenodo.org/records/6583422
+
+Data:
+* https://zenodo.org/records/6583422/files/Barcelona_reviews.csv?download=1
+  
+
 
