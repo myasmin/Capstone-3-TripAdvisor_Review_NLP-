@@ -21,6 +21,12 @@ Our interest is focused on the Sentiment Analysis of the reviews in the Dataset.
 In other words, this problem is an application of Unsupervised Learning (Topic Modelling) to deal the of high-dimensionality. Then, we applied Supervised Learning (Classification of Sentiments) to find the intfluentials among the Topics.
 
 ## Analysis Overview:
+This analysis is an implementation of Unsurevised Modelling technique (Topic Modelling) on Supervised Modelling (Classification of Sentiments). Rather than PCA or any other Technique, Topic Modelling is implemented to reduce the dimensionality of the Corpus. I found this approach more appealing and stronger than PCA.
+
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/frequency%20of%20top%20words.png)
+
+The Stopwords selection criteria was crucial. Looking into the frequency of the words, selecting the ricght words were important. The words like 'good', 'great', service etc played important role in model performances (in terms of positive reviews especially). In the otherhand, selecting the other high frequency words were important, but not impactful on sentiment classification ()
+
 This study has scopes of tuning in terms of grid search CV, hyperparatemer tuning (especially Number of Topic Determination) and also scope for Neural Network application. Overall, I found this analysis a different way to deal with dimensinality reduction, Topic words selection and predictive analysis.
 
 Details on Data Wrangling, EDA and Preprocessing [here](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/Data_Preprocessing_and_EDA.ipynb).
