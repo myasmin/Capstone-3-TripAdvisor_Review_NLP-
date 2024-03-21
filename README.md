@@ -60,8 +60,11 @@ In the stage of Sentiment Analysis, we found that the wordcount, Topic 5 and Top
 
 ![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/feature%20importance%20by%20factors.png)
 
+The Random Forest and Logistic Regression models performed well in terms of accuracy (RF 58.25% accurate and Logistic 59.05%).But, we would also emphasize on the F1 score since our count of false positives and false negatives.
 
-This study has scopes of tuning in terms of grid search CV, hyperparatemer tuning (especially Number of Topic Determination) and also scope for Neural Network application for LLM. Overall, I found this analysis a different way to deal with dimensinality reduction, Topic words selection and predictive analysis.
+This study has scopes of tuning in terms of grid search CV, hyperparatemer tuning (especially Number of Topic Determination) and also scope for Neural Network application for LLM. 
+
+Overall, I found this analysis a different way to deal with dimensinality reduction, Topic words selection and predictive analysis, which has more stronger, faster and scientific approach for Sentiment Analysis in NLP projects.
 
 Details on Data Wrangling, EDA and Preprocessing [here](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/Data_Preprocessing_and_EDA.ipynb).
 
