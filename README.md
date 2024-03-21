@@ -21,7 +21,11 @@ Our interest is focused on the Sentiment Analysis of the reviews in the Dataset.
 In other words, this problem is an application of Unsupervised Learning (Topic Modelling) to deal the of high-dimensionality. Then, we applied Supervised Learning (Classification of Sentiments) to find the intfluentials among the Topics.
 
 ## Analysis Overview:
-This analysis is an implementation of Unsurevised Modelling technique (Topic Modelling) on Supervised Modelling (Classification of Sentiments). Rather than PCA or any other Technique, Topic Modelling is implemented to reduce the dimensionality of the Corpus. I found this approach more appealing and stronger than PCA.
+This analysis is an implementation of Unsurevised Modelling technique (Topic Modelling) on Supervised Modelling (Classification of Sentiments). Rather than PCA or any other Technique, Topic Modelling is implemented to reduce the dimensionality of the Corpus. I found this approach more appealing and stronger than PCA. After reducing the dimentionality, the identified topics and other factors are used to Classify the Sentiments.
+
+![Positive Wordcloud](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/positive%20wordcloud.png)
+
+![Negative Wordcloud](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/negative%20wordcloud.png)
 
 ![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/frequency%20of%20top%20words.png)
 
