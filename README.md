@@ -20,8 +20,8 @@ Our interest is focused on the Sentiment Analysis of the reviews in the Dataset.
 
 In other words, this problem is an application of Unsupervised Learning (Topic Modelling) to deal the of high-dimensionality. Then, we applied Supervised Learning (Classification of Sentiments) to find the intfluentials among the Topics.
 
-## Analysis Overview:
-This analysis is an implementation of Unsurevised Modelling technique (Topic Modelling) on Supervised Modelling (Classification of Sentiments). Rather than PCA or any other Technique, Topic Modelling is implemented to reduce the dimensionality of the Corpus. I found this approach more appealing and stronger than PCA. After reducing the dimentionality, the identified topics and other factors are used to Classify the Sentiments.
+## ANALYSIS OVERVIEW:
+This analysis is an implementation of Unsupervised Modelling technique (Topic Modelling) on Supervised Modelling (Classification of Sentiments). Rather than PCA or any other Technique, Topic Modelling is implemented to reduce the dimensionality of the Corpus. I found this approach more appealing and stronger than PCA. After reducing the dimentionality, the identified topics and other factors are used to Classify the Sentiments.
 
 ![Positive Wordcloud](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/positive%20wordcloud.png)
 
@@ -29,9 +29,39 @@ This analysis is an implementation of Unsurevised Modelling technique (Topic Mod
 
 ![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/frequency%20of%20top%20words.png)
 
-The Stopwords selection criteria was crucial. Looking into the frequency of the words, selecting the ricght words were important. The words like 'good', 'great', service etc played important role in model performances (in terms of positive reviews especially). In the otherhand, selecting the other high frequency words were important, but not impactful on sentiment classification ()
+The Stopwords selection criteria was crucial. Looking into the frequency of the words, selecting the ricght words were important. The words like *'good', 'great', 'service'* etc played important role in model performances (in terms of positive reviews especially). In the otherhand, selecting the other high frequency words were important, but not impactful on sentiment classification (*"food","place","restaurant"*).
 
-This study has scopes of tuning in terms of grid search CV, hyperparatemer tuning (especially Number of Topic Determination) and also scope for Neural Network application. Overall, I found this analysis a different way to deal with dimensinality reduction, Topic words selection and predictive analysis.
+6 Topics were selected in the Corpus, and 2 of them were found to be most dominant.
+
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/wordcloud%20by%20topics.png)
+
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/WC%20and%20important%20topic%20keywords.png)
+
+Our Analysis showed that **Topic 5** and **Topic 3** are the most dominant topics for the Barcelona Dataset.
+
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/number%20of%20topics%20by%20topic%20keywords.png)
+
+
+**Topic 5: good, great, recommend, friendly, nice, really, well, tapa, wine, menu, excellent, also, dish, atmosphere, try, delicious, definitely, love, small, taste, little, quality, tasty, eat, fresh, highly, lovely, bit, choice, different, lot, selection, dessert, cook, tapas, choose, meat, salad, quite, special**
+
+
+**Topic 3: get, make, come, order, back, even, eat, waiter, drink, take, want, try, say, friend, see, feel, give, think, pizza, ever, people, leave, last, always, way, ask, know, full, family, absolutely, thing, start, end, owner, decide, away, speak, still, pay, happy**
+
+Then came the part of Sentiment Analysis. We had some intesting findings:
+
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/sample%20rating%20review%20distribution.png)
+
+
+![Wordcount in Reviews]([Wordcount in Reviews](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/rating%20review%20by%20wordcount.png))
+
+We observed that, even reviewers are likely to leave positive reviews, but people use more word for negative reviews in their comments.
+
+In the stage of Sentiment Analysis, we found that the wordcount, Topic 5 and Topic 3 are the most influential factors while classifying sentiments.
+
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/feature%20importance%20by%20factors.png)
+
+
+This study has scopes of tuning in terms of grid search CV, hyperparatemer tuning (especially Number of Topic Determination) and also scope for Neural Network application for LLM. Overall, I found this analysis a different way to deal with dimensinality reduction, Topic words selection and predictive analysis.
 
 Details on Data Wrangling, EDA and Preprocessing [here](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/Data_Preprocessing_and_EDA.ipynb).
 
