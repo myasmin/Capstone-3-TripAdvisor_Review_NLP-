@@ -23,6 +23,13 @@ In other words, this problem is an application of Unsupervised Learning (Topic M
 ## Analysis Overview:
 This study has scopes of tuning in terms of grid search CV, hyperparatemer tuning (especially Number of Topic Determination) and also scope for Neural Network application. Overall, I found this analysis a different way to deal with dimensinality reduction, Topic words selection and predictive analysis.
 
+Details on Data Wrangling, EDA and Preprocessing [here](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/Data_Preprocessing_and_EDA.ipynb).
+
+Details on Analysis and Modelling [here](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/Analysis_and_Modelling.ipynb).
+
+Find a project report in [here](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/Project%20Report.pdf).
+
+
 ## Tools and Software: 
 
 Python 3.9 (Most Commonly libraries listed below):
