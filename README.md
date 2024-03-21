@@ -47,12 +47,12 @@ Our Analysis showed that **Topic 5** and **Topic 3** are the most dominant topic
 
 **Topic 3: get, make, come, order, back, even, eat, waiter, drink, take, want, try, say, friend, see, feel, give, think, pizza, ever, people, leave, last, always, way, ask, know, full, family, absolutely, thing, start, end, owner, decide, away, speak, still, pay, happy**
 
-Then came the part of Sentiment Analysis. We had some intesting findings:
+Then came the part of Sentiment Analysis. We had some interesting findings:
 
 ![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/sample%20rating%20review%20distribution.png)
 
 
-![Wordcount in Reviews]([Wordcount in Reviews](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/rating%20review%20by%20wordcount.png))
+![Wordcount in Reviews](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/plots/rating%20review%20by%20wordcount.png)
 
 We observed that, even reviewers are likely to leave positive reviews, but people use more word for negative reviews in their comments.
 
