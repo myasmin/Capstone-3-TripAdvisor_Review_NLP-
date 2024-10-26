@@ -1,4 +1,4 @@
-# ## An NLP Project Report on Analyzing Sentiments of Restaurant Reviews provided by TripAdvisor - London City ##
+# An NLP Project Report on Analyzing Sentiments of Restaurant Reviews provided by TripAdvisor - London City ##
 # **1. Introduction**
 
 People must eat to live, and for that people who love to dine at a restaurant rely on restaurant reviews. In this modern era of food industry and internet, reviews left on the internet for a restaurant has a significant impact on their business, but also opens the opportunity to find hidden information on new opportunities for consumer business. TripAdvisor has a rating-based review system which helps the visitors get an idea on the review on restaurants.
