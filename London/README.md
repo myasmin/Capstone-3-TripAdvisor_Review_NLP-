@@ -80,9 +80,7 @@ I split the dataset into **80% training** and **20% testing** sets to train the 
 
 The training process involved feeding the vectorized review texts to the chosen classifiers. I used **6-fold cross-validation** to ensure that the model generalizes well across unseen data and to prevent overfitting.
 
-![A diagram of a graph
-
-Description automatically generated with medium confidence](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.001.png)
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.001.png)
 
 **4. Evaluation Metrics**
 
@@ -176,7 +174,7 @@ The further analysis has prospect for:
 - Applying cross-validation on sample selection and topic identification.
 - Automating topic labeling based on high-frequency keywords.
 - Expanding the analysis across datasets from all six cities to develop a large language model (LLM) for sentiment prediction.
-- 
+  
 # **8. References**
 - Dataset: The details on the dataset can be found [here](https://www.kaggle.com/datasets/inigolopezrioboo/a-tripadvisor-dataset-for-nlp-tasks) at Kaggle.
 - Analysis: The Github Repo of this Analysis is [here.](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/tree/main) 
