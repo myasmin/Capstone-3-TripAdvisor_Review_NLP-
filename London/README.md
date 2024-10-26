@@ -1,18 +1,26 @@
 # ## An NLP Project Report on Analyzing Sentiments of Restaurant Reviews provided by TripAdvisor - London City ##
 # **1. Introduction**
+
 People must eat to live, and for that people who love to dine at a restaurant rely on restaurant reviews. In this modern era of food industry and internet, reviews left on the internet for a restaurant has a significant impact on their business, but also opens the opportunity to find hidden information on new opportunities for consumer business. TripAdvisor has a rating-based review system which helps the visitors get an idea on the review on restaurants.
 
-Today, I am discussing the Rating Reviews obtained 1827 Restaurants from London City. 
+Today, I am discussing the Rating Reviews obtained 1827 Restaurants from London City.
+
 # **2. Problem Statement**
-# The goal of this project is to explore and provide solutions to the following key questions:
-- # What factors contribute most to restaurant reviews?
-- # Can we predict the sentiment of a review based on common patterns or trends?
-- # What are the key words or phrases that help identify the sentiment in a review?
-# The aim is to analyze both positive and negative reviews, uncover the factors that drive these sentiments, and develop an action plan to categorize the keywords most strongly associated with each sentiment.
-# The London dataset, containing 196,134 reviews across 13 columns, includes detailed information such as restaurant names, ratings (1 to 5), review sentiments (positive or negative), full reviews, dates, and other relevant metadata. Each row represents a single customer review.
-# Our primary focus is the Sentiment Analysis of these reviews, using the "sample" column, which indicates whether a review is positive or negative, as the target variable for classification.
-# Since this is an NLP-based classification problem, we will employ Topic Modeling to identify clusters of related keywords and explore their association with sentiment. This approach will help us determine how different topics contribute to positive or negative reviews, allowing for a deeper understanding of customer feedback.
+
+The goal of this project is to explore and provide solutions to the following key questions:
+- What factors contribute most to restaurant reviews?
+- Can we predict the sentiment of a review based on common patterns or trends?
+- What are the key words or phrases that help identify the sentiment in a review?
+
+The aim is to analyze both positive and negative reviews, uncover the factors that drive these sentiments, and develop an action plan to categorize the keywords most strongly associated with each sentiment.
+
+The London dataset, containing 196,134 reviews across 13 columns, includes detailed information such as restaurant names, ratings (1 to 5), review sentiments (positive or negative), full reviews, dates, and other relevant metadata. Each row represents a single customer review.
+Our primary focus is the Sentiment Analysis of these reviews, using the "sample" column, which indicates whether a review is positive or negative, as the target variable for classification.
+
+Since this is an NLP-based classification problem, we will employ Topic Modeling to identify clusters of related keywords and explore their association with sentiment. This approach will help us determine how different topics contribute to positive or negative reviews, allowing for a deeper understanding of customer feedback.
+
 # **3. Data Collection and Preprocessing**
+
 The data for this analysis was sourced from a [**Kaggle dataset**](https://www.kaggle.com/datasets/inigolopezrioboo/a-tripadvisor-dataset-for-nlp-tasks), which contains six tables representing reviews from six cities: London, New York, New Delhi, Paris, Barcelona, and Madrid, all in CSV format. For this project, I focused on the **London** dataset.
 
 The preprocessing steps included the following:
@@ -38,6 +46,7 @@ To address dimensionality reduction and topic discovery, I applied the **Latent 
 By modeling the text corpus into topics, LDA helped reduce the complexity of the dataset while maintaining the interpretability of the topics. These dominant topics were then used as inputs for the sentiment analysis model, allowing for the prediction of sentiment based on the discovered topics.
 
 The tools and libraries used for this task included Python’s **SpaCy**, **Gensim** for LDA topic modeling, along with **NLTK** and **Scikit-learn** for preprocessing and sentiment prediction.
+
 # **5. Model Training and Evaluation**
 Discuss the model training process, including hyperparameter tuning and performance metrics. Include the evaluation results.
 
@@ -73,7 +82,7 @@ The training process involved feeding the vectorized review texts to the chosen 
 
 ![A diagram of a graph
 
-Description automatically generated with medium confidence](Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.001.png)
+Description automatically generated with medium confidence](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.001.png)
 
 **4. Evaluation Metrics**
 
@@ -93,30 +102,24 @@ After training and evaluation, the following results were obtained on the test s
 |Logistic Regression|64%|0\.41|0\.75|0\.53|
 
 The **Logistic Regression model** slightly outperformed the Naive Bayes model in terms of accuracy and precision. Therefore, it was selected as the final model for predicting the sentiment of restaurant reviews.
+
 # **6. Results and Analysis:**
 - The reviewers were enthusiastic about leaving positive reviews mostly.
 
-![A comparison of a bar graph
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.002.png)
 
-Description automatically generated](Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.002.png)
-
-- ![A blue line graph with white text
-
-Description automatically generated](Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.003.png)But, while leaving negative reviews, people use more words. Afterwards, the wordcount in the reviews was found to be a significant attribute to predict negative sentiments.
+- ![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.003.png)
+  
+  But, while leaving negative reviews, people use more words. Afterwards, the wordcount in the reviews was found to be a significant attribute to predict negative sentiments.
 
 - The word cloud on the Positive and Negative Comments were as following:
 
-![A close up of words
-
-Description automatically generated](Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.004.png) ![A close up of words
-
-Description automatically generated](Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.005.png)
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.004.png)
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.005.png)
 
 From the word clouds it was visible that there were several words that had very high frequency but could impact the sentiment analysis. To avoid further bias, those high frequency words were included in the stopwords. ('food', 'place', 'restaurant', 'go', and 'london')
 
-![A graph with a line
-
-Description automatically generated](Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.006.png)
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.006.png)
 
 - The identified 8 topics were as following:
 
@@ -138,23 +141,15 @@ Topic 7: time, come, get, even, back, order, drink, make, take, wait, meal, want
 
 Following is the wordcloud of the identified topics:
 
-![A group of words on a white background
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.007.png)
 
-Description automatically generated](Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.007.png)
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.008.png)
 
-![A group of colorful graphs
-
-Description automatically generated with medium confidence](Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.008.png)
-
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.009.png)
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.009.png)
 
 - Among these 8 Topics, we analyzed to find out the Dominant topics., which were Topic 4 and Topic 7 – 
 
-![A graph with red and blue bars
-
-Description automatically generated](Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.010.png)
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.010.png)
 
 Topic 4: good, service, great, staff, really, visit, friendly, excellent, nice, well, lovely, recommend, atmosphere, definitely, price, lunch, enjoy, dinner, love, find, look, little, quality, always, attentive, feel, cocktail, choice, tasty, wonderful, busy, experience, bit, night, helpful, try, make, area, quite, welcome
 
@@ -164,9 +159,7 @@ From both Topics, it is evident that these keywords are associated with Service.
 
 - To determine the key features that contribute to sentiment prediction, our analysis reveals that 'Topic 4' and 'Word Count in the Reviews' are the most influential factors.
 
-![A graph with blue and white bars
-
-Description automatically generated](Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.011.png)
+![](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/blob/main/London/Project%20Report%20on%20London%20City/Aspose.Words.79df1bad-58af-4348-923a-d48ff3b7e32d.011.png)
 # **7. Conclusion**
 Summarize the outcomes of the project, its contributions, and potential areas for future work.
 
@@ -176,12 +169,14 @@ The results emphasize that restaurant service quality and the depth of customer 
 
 There are scopes to for- 
 The further analysis has prospect for:
-- # There are opportunities for further analysis, including:
-- # Developing a processing pipeline.
-- # Implementing a neural network model for topic modeling.
-- # Applying cross-validation on sample selection and topic identification.
-- # Automating topic labeling based on high-frequency keywords.
-- # Expanding the analysis across datasets from all six cities to develop a large language model (LLM) for sentiment prediction.
+
+- There are opportunities for further analysis, including:
+- Developing a processing pipeline.
+- Implementing a neural network model for topic modeling.
+- Applying cross-validation on sample selection and topic identification.
+- Automating topic labeling based on high-frequency keywords.
+- Expanding the analysis across datasets from all six cities to develop a large language model (LLM) for sentiment prediction.
+- 
 # **8. References**
 - Dataset: The details on the dataset can be found [here](https://www.kaggle.com/datasets/inigolopezrioboo/a-tripadvisor-dataset-for-nlp-tasks) at Kaggle.
 - Analysis: The Github Repo of this Analysis is [here.](https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-/tree/main) 
@@ -194,7 +189,7 @@ The further analysis has prospect for:
   - Scikitlearn
   - Genism
   - Spacy.
-- Hekpful Resources: 
+- Helpful Resources: 
   - [Machine Learning Plus: Topic Modeling in Python](https://www.machinelearningplus.com/nlp/topic-modeling-python-sklearn-examples/)
   - [Eugenia Anello's NLP Tutorial Series on Medium](https://eugenia-anello.medium.com/nlp-tutorial-series-d0baaf7616e0)
   - [Nanonets: Topic Modeling with LSA, PSLA, LDA, and LDA2Vec](https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05)
